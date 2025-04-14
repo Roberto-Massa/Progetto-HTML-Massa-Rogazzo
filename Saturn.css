@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+    
+}
+
+.PosTitolo{
+    text-align: center;
+    color: whitesmoke;
+}
+
+.bottone{
+    position: relative;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 25px;
+    left: 1120px;
+    top: -75px;
+    
+}

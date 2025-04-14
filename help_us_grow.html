@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="color: blueviolet;">Support our project</title>
+    <link rel="icon" href="immagini/Donazione-removebg-preview.png">
+    <link rel="stylesheet" href="help_us_grow.css">
+</head>
+<body>
+    <div>
+        <h1 class="title"><i>Thank You For Supporting Us! </i></h1>
+        <a href="I_pianeti_Home.html">
+            <button class="button">Home</button>
+        </a>
+    </div>
+    
+    <div class="Position">
+        <form action="help_us_grow.php" method="post">
+
+            <br>
+            <label for=""><tt>Importo:   </tt></label>
+            <input type="number" minlength="2" maxlength="20" required placeholder="000,0$"><br>
+            <br>
+            <label for="payment">payment: </label>
+            <select id="payment">
+                <option value="visa">Visa</option>
+                <option value="Mastercars">Mastercard</option>
+                <option value="PayPal">PayPal</option>
+                <option value="AmericanExpress">AmericanExpress</option>
+                <option value="Buoni Pasto">Buoni Pasto</option>
+            </select><br>
+            <br>
+            <label for="numerocarta"><tt>numero carta:</tt></label>
+            <input type="number" minlength="16" maxlength="16" required placeholder="1234-1234-1234-1234">
+            <br>
+            <label for="Intestatario"><tt>intestatario:</tt></label>
+            <input type="text" minlength="16" maxlength="16" required>
+            <br>
+            <label for="CVV"><tt>CVV:</tt></label>
+            <input type="number" minlength="3" maxlength="3" required placeholder="000">
+            <br>
+            <label for="Data scadenza"><tt>Scandenza carta:</tt></label>
+            <input type="month" id="Data scadenza"><br>
+
+            <input type="submit" > <input type="reset"><br>
+            
+        </form>
+        
+        <div class="imagePos">
+           <img src="immagini/Martell3-removebg-preview.png" alt="Casa Martell" height="200">
+        </div>
+    </div>
+    
+</body>
+</html>

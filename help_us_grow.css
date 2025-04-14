@@ -1,0 +1,33 @@
+body{
+    background-color: lightgray;
+}
+
+
+.CardSpan{
+    position: relative;
+    left: -250px;
+}
+
+.Position{
+    position: relative;
+    left: 490px;
+    top: 90px;
+}
+
+.imagePos{
+    position: relative;
+    left: 60px;
+    top: 80px;
+}
+.title{
+    color: black;
+    text-align: center;
+}
+
+.button{
+    position: relative;
+    left: 1120px;
+    top: -75px;
+    border-radius: 25px;
+    background-color: lightgray;
+}

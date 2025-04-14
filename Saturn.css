@@ -1,8 +1,6 @@
 body{
     background-color:wheat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 
@@ -12,7 +10,7 @@ body{
     text-transform:uppercase;
     text-align: center;
     background:linear-gradient(to right,
-    #f542b3, #7311f2, #0ae7f2,#7311f2, #f542b3);
+    #f542b3, #7311f2, #0ae7f2,#0ae7f2,#7311f2, #f542b3);
     background-size: 200%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -25,15 +23,17 @@ body{
         background-position: 0% 0%;
     }
     to {
-        background-position: 100% 100%;
+        background-position: 200% 200%;
     }
 }
 
 .bottone{
-    background-color: azure;
+    background: wheat;
     color: black;
+    position: relative;
+    margin-top:-80px;
+    left: 1800px;
     border-radius: 25px;
-    left: 100px;
-    top: 100%;
+   
 }
 

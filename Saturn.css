@@ -1,19 +1,39 @@
 body{
-    background-color: black;
-    
+    background-color:wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.PosTitolo{
+
+.Titolo{
+    font-family: "Poppins", "sans-serif";
+    font-size: 50px;
+    text-transform:uppercase;
     text-align: center;
-    color: whitesmoke;
+    background:linear-gradient(to right,
+    #f542b3, #7311f2, #0ae7f2,#7311f2, #f542b3);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animazionetitolo 4s linear infinite;
+}
+
+@keyframes animazionetitolo{
+    from{
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 100% 100%;
+    }
 }
 
 .bottone{
-    position: relative;
-    background-color: whitesmoke;
+    background-color: azure;
     color: black;
     border-radius: 25px;
-    left: 1120px;
-    top: -75px;
-    
+    left: 100px;
+    top: 100%;
 }
+

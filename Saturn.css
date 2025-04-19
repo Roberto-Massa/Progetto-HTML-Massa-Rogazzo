@@ -37,3 +37,42 @@ body{
    
 }
 
+
+
+.Cipolle{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: auto;
+    left: 50%;
+    animation: animation 3s;
+    translate: -50% -50%;
+    
+    width: 100px;
+    height: 100px;
+    
+}
+
+
+@keyframes animation{
+    0% {
+        scale: 1;
+        background-color: transparent;
+        color: transparent;
+        border-color: black;
+    }
+    50%{
+        scale: 1.2;
+        border-radius: 50px;
+        background-color:transparent;
+        color: black;
+        border-color: black;
+    }
+    100%{
+        transform: rotate(360deg);
+        
+        
+        border-color: black;
+    }
+}

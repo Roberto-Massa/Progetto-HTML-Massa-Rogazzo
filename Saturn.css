@@ -31,12 +31,16 @@ body{
     background: wheat;
     color: black;
     position: relative;
-    margin-top:-80px;
-    left: 1800px;
+    top: -100px;
+    left: 1150px;
     border-radius: 25px;
    
 }
+.bottone:hover{
+    background-color: whitesmoke;
+    color: black;
 
+}
 
 
 .Cipolle{

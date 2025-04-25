@@ -12,7 +12,7 @@ p{
 }
 h2{
     color: rgb(57, 232, 255);
-    background: rgba(0, 0, 0, 0.432);
+    background: transparent;
     font-size: 25px;
     text-align: left; 
 }
@@ -34,12 +34,12 @@ h2{
     text-transform:uppercase;
     text-align: center;
     background:linear-gradient(to right,
-    orange, yellow, red,orange, yellow, red);
+    orange, yellow, red,rgb(231, 199, 41), orange, yellow, red);
     background-size: 200%;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: animazionetitolo 6s linear infinite;
+    animation: animazionetitolo 7s linear infinite;
 }
 
 @keyframes animazionetitolo{
@@ -61,7 +61,7 @@ h2{
 
 
 .SupportButton:hover{
-    background-color: whitesmoke;
+    background-color: yellow;
     color: black;
 
 }
@@ -69,6 +69,7 @@ h2{
 
 .PosSaturn{
     position: absolute;
+    left: 1000px;
     
 }
 
@@ -80,4 +81,14 @@ h2{
     width: 100px;
     height: 80px;
     
+}
+
+
+
+.PosSole{
+    position: absolute;
+    left: -200px;
+    height: 320px;
+    width: 100px;
+    border-radius: 50px;
 }

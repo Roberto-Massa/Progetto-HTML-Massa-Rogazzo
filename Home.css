@@ -92,3 +92,51 @@ h2{
     width: 100px;
     border-radius: 50px;
 }
+
+
+.StartButtonDiv{
+    position: absolute;
+    left: 535px;
+    bottom: 10px;
+    width: 150px;
+    height: 30px;
+    background-color: transparent;
+    border: 5px solid white;
+    border-radius: 25px;
+}
+
+
+.StartButton{
+    background-color: transparent;
+    color: white;
+    height: 30px;
+    width: 150px;
+    border-radius: 25px;
+    border: 5px solid transparent;
+}
+
+
+
+.StartButton:hover{
+    scale: 1.15;
+    color: wheat;
+    font-family: "Yellowtail", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.StartButtonDiv:hover{
+    background:linear-gradient(to right,
+    #f542b3, #7311f2, #0ae7f2,#0ae7f2,#7311f2, #f542b3);
+    animation: animazioneDiv 7s linear infinite;
+    
+    border-color: blue;
+}
+
+@keyframes animazioneDiv{
+    from{
+        background-size: 0% 0%;
+    }
+    to {
+        background-size: 200% 200%;
+    }
+}

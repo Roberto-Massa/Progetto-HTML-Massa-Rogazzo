@@ -39,15 +39,17 @@ h2{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: animazionetitolo 7s linear infinite;
+    animation: animazionetitolo 7s ease-in-out infinite;
 }
 
 @keyframes animazionetitolo{
     from{
         background-position: 0% 0%;
+        
     }
     to {
         background-position: 200% 200%;
+        
     }
 }
 

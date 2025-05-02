@@ -21,8 +21,9 @@ body{
     text-wrap: wrap;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.2;
-    width: 260px;
-    height: 330px;
+    width: 300px;
+    height: 350px;
+    font-size: large;
     border: 1px dashed white;
     display: flex;
     justify-content: center;
@@ -64,21 +65,21 @@ body{
 .luna1{
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 55%;
     translate: -50% -50%;
     width: 60px;
     height: 60px;
-    border: 2px solid white;
+    border: 2px solid transparent;
 }
 
 .luna2{
     position: absolute;
     top: 70%;
-    left: 50%;
+    left: 55%;
     
     width: 60px;
     height: 60px;
-    border: 2px solid white;
+    border: 2px solid transparent;
 }
     
 
@@ -105,10 +106,26 @@ body{
     width: 100%;
     background-color: red;
     left: 50%;
-    translate: -50%;
+    top: 50%;
+    translate: -50% -50%;
     z-index: -1;
     background-image: conic-gradient(red, blue);
+    opacity: 0;
    
+}
+
+
+
+
+.DivContenitoreImmagine{
+    position: absolute;
+    background-color: transparent;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    translate: -50% -50%;
+    height: 290px;
+    width: 290px;
 }
 
 
@@ -120,11 +137,44 @@ body{
 }
 
 .divImmagine:hover::after{
-    animation: spin 3s linear infinite;
+    animation: spin 5s ease-in-out infinite;
+    opacity: 1;
 }
 
 .divImmagine:hover::before{
-    animation: spin 3s linear infinite;
+    animation: spin 5s ease-in-out infinite;
+    opacity: 1;
+}
+
+
+
+
+
+.DivContenitoreImmagine::after, .DivContenitoreImmagine::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    opacity: 0;
+    
+   
+}
+
+
+
+.DivContenitoreImmagine:hover::after{
+    animation: spin 5s ease-in-out infinite;
+    opacity: 1;
+}
+
+.DivContenitoreImmagine:hover::before{
+    animation: spin 5s ease-in-out infinite;
+    opacity: 1;
 }
 
 @keyframes spin {

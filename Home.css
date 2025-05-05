@@ -3,23 +3,110 @@ body{
     background-image: url(immagini/spazio-profondo2.jpg);
 }
 
-p{
-    color: white;
-    background: transparent;
+
+
+.Semititolo{
     
-    font-size: 20px;
-    text-align: left;
-}
-h2{
-    color: rgb(57, 232, 255);
-    background: transparent;
-    font-size: 25px;
-    text-align: left; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+    color: violet;
+    width: 200px;
+    height: 50px;
+    border: 3px solid #7311f2;
+    animation: animazioneSemititolo 2s linear  infinite;
 }
 
-.white{
-    color: white;
+
+@keyframes animazioneSemititolo{
+    0%{
+        opacity: 1;
+        scale: 1.1;
+        border: 3px dotted gray;
+        color: #f542b3;
+    }
+
+    33%{
+         scale: 0.9;
+         border: 3px dotted gray;
+         color: #f542b3;
+    }
+    66%{
+        scale: 1;
+        border: 3px dotted gray;
+        color: #0ae7f2;
+    }
+    100%{
+        scale: 1.1;
+        border: 3px dotted gray;
+        color: #0ae7f2;
+        
+    }
 }
+
+
+
+
+
+
+
+.divintroduzione{
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid transparent;
+    width: 105%;
+    height: 600px;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    background-color: transparent;
+}
+
+.elementoIntro{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: larger;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 3px dotted white;
+    opacity: 0.3;
+}
+
+
+
+
+
+.elementoIntro:hover{
+    animation: animazioneElementoIntro 0.7s ease-in-out forwards;
+}
+
+
+
+
+
+@keyframes animazioneElementoIntro{
+    0%{
+        opacity: 0;
+        transform: translateY(30px) scale(0.8);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+        box-shadow: 0px 0px 60px red;
+        border: 5px solid orangered;
+        
+    }
+}
+
 
 .postitolo{
     position: relative;
@@ -142,3 +229,7 @@ h2{
         background-size: 200% 200%;
     }
 }
+
+
+
+

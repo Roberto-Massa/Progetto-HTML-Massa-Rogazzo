@@ -16,7 +16,7 @@ body{
     width: 200px;
     height: 50px;
     border: 3px solid #7311f2;
-    animation: animazioneSemititolo 2s linear  infinite;
+    animation: animazioneSemititolo 2s ease-in  infinite;
 }
 
 
@@ -59,11 +59,11 @@ body{
     justify-content: center;
     align-items: center;
     border: 3px solid transparent;
-    width: 105%;
+    width: 95%;
     height: 600px;
     flex-wrap: wrap;
     gap: 20px;
-    
+    border: 2px solid white;
     background-color: transparent;
 }
 
@@ -75,8 +75,8 @@ body{
     color: whitesmoke;
     font-size: larger;
     background-color: transparent;
-    width: 300px;
-    height: 300px;
+    width: 270px;
+    height: 270px;
     border: 3px dotted white;
     opacity: 0.3;
 }
@@ -164,7 +164,7 @@ body{
 
 
 .divButton{
-    position: relative;
+    position: absolute;
     margin-top: 20px;
     left: 1120px;
     width: 100px;

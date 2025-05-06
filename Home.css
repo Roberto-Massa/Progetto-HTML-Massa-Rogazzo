@@ -63,7 +63,7 @@ body{
     height: 600px;
     flex-wrap: wrap;
     gap: 20px;
-    border: 2px solid white;
+    border: 2px solid transparent;
     background-color: transparent;
 }
 
@@ -110,7 +110,7 @@ body{
 
 .postitolo{
     position: relative;
-    top: -50px;
+    top: 10px;
     align-items: center;
 }
 
@@ -207,7 +207,7 @@ body{
 
 
 .StartButton:hover{
-    scale: 1.15;
+    scale: 1.2;
     color: wheat;
     font-family: "Yellowtail", cursive;
     font-weight: 600;
@@ -216,7 +216,7 @@ body{
 .StartButtonDiv:hover{
     background:linear-gradient(to right,
     #f542b3, #7311f2, #0ae7f2,#0ae7f2,#7311f2, #f542b3);
-    animation: animazioneDiv 7s linear infinite;
+    animation: animazioneDiv 3s linear forwards;
     
     border-color: blue;
 }
@@ -227,6 +227,7 @@ body{
     }
     to {
         background-size: 200% 200%;
+        scale: 1.2;
     }
 }
 

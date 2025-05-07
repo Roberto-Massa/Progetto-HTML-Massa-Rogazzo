@@ -141,19 +141,42 @@ body{
 }
 
 .SupportButton{
+    position: fixed;
     background: transparent;
     border-color: whitesmoke;
     color: whitesmoke;
     border-radius: 25px;
-    padding: 2px;   
+    padding: 2px;
+    z-index: 5;   
 }
 
 
 .SupportButton:hover{
-    background-color: yellow;
-    color: black;
+    animation: SupportButtonanimation 1s ease-in-out forwards;
 
 }
+
+
+
+
+
+@keyframes SupportButtonanimation {
+    0%{
+        transform: scale(1);
+        background: conic-gradient(orange, yellow, red);
+        opacity: 0.2;
+    }
+    100%{
+        scale: 1.1;
+        opacity: 1;
+        background: conic-gradient(orange, yellow, red);
+        color: black;
+        border-color: orangered;
+        box-shadow: 0px 0px 50px orangered;
+        font-size: 1.2;
+    }
+}
+
 
 
 .PosSaturn{
@@ -192,6 +215,7 @@ body{
     background-color: transparent;
     border: 5px solid white;
     border-radius: 25px;
+    opacity: 0.3;
 }
 
 
@@ -202,6 +226,7 @@ body{
     width: 150px;
     border-radius: 25px;
     border: 5px solid transparent;
+    opacity: 0.8;
 }
 
 
@@ -212,12 +237,13 @@ body{
     font-family: "Yellowtail", cursive;
     font-weight: 600;
     font-style: normal;
+    opacity: 1;
 }
 .StartButtonDiv:hover{
     background:linear-gradient(to right,
     #f542b3, #7311f2, #0ae7f2,#0ae7f2,#7311f2, #f542b3);
     animation: animazioneDiv 3s linear forwards;
-    
+    opacity: 1;
     border-color: blue;
 }
 

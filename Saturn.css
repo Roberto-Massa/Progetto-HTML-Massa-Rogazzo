@@ -47,7 +47,29 @@ body{
     color: white;
     border-right: none;
     border-left: none;
+    color: whitesmoke;
+    font-family: "Poppins", "sans-serif";
+    font-size: 35px;
+    text-transform:uppercase;
+    text-align: center;
+    
 }
+
+.Titolo{
+    color: whitesmoke;
+    font-family: "Poppins", "sans-serif";
+    font-size: 35px;
+    text-transform:uppercase;
+    text-align: center;
+    border: 3px solid transparent;
+    background-color: transparent;
+}
+
+.Titolo:hover{
+    color: deeppink;
+}
+
+
 
 .divImmagine{
     position: absolute;
@@ -185,3 +207,9 @@ body{
         transform: rotate(360deg);
     }
 }
+
+
+
+
+
+

@@ -1,6 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <title>I Pianeti</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url(immagini/spazio-profondo2.jpg);
+      font-family: sans-serif;
+    }
+
+    .carousel {
+      width: 150%;
+      max-width: 900px;
+      aspect-ratio: 16 / 9;
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+      border-color: rgb(255, 255, 255);
+    } 
+
+    .slides {
+      display: flex;
+      width: 15%;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slides img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    .navigation-manual {
+      position: absolute;
+      width: 100%;
+      bottom: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .manual-btn {
+      border: 2px solid #fff;
+      padding: 5px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .manual-btn:hover {
+      background: #fff;
+    }
+
+    /* posizione delle slide */
+    #radio1:checked ~ .slides { transform: translateX(300%); }
+    #radio2:checked ~ .slides { transform: translateX(200%); }
+    #radio3:checked ~ .slides { transform: translateX(100%); }
+    #radio4:checked ~ .slides { transform: translateX(0%); }
+    #radio5:checked ~ .slides { transform: translateX(-100%); }
+    #radio6:checked ~ .slides { transform: translateX(-200%); }
+    #radio7:checked ~ .slides { transform: translateX(-300%); }
+    #radio8:checked ~ .slides { transform: translateX(-400%); }
+    #radio9:checked ~ .slides { transform: translateX(-500%); }
+
+  </style>
+</head>
+<body>
+
+  <div class="carousel">
+    <!-- Radio Buttons -->
+    <input type="radio" name="radio-btn" id="radio1" checked>
+    <input type="radio" name="radio-btn" id="radio2">
+    <input type="radio" name="radio-btn" id="radio3">
+    <input type="radio" name="radio-btn" id="radio4">
+    <input type="radio" name="radio-btn" id="radio5">
+    <input type="radio" name="radio-btn" id="radio6">
+    <input type="radio" name="radio-btn" id="radio7">
+    <input type="radio" name="radio-btn" id="radio8">
+    <input type="radio" name="radio-btn" id="radio9">
+
+
+
+    <!-- Slides -->
+    <div class="slides">
+      <img src="immagini/Sole-removebg-preview.png" alt="Slide 1">
+      <img src="immagini/mercurio.png" alt="Slide 2">
+      <img src="immagini/venere.png" alt="Slide 3">
+      <img src="immagini/Terra.png" alt="Slide 4">
+      <img src="immagini/marte.png" alt="Slide 5">
+      <img src="immagini/giove.png" alt="Slide 6">
+      <img src="immagini/SarurnoBello-removebg-preview.png" alt="Slide 7">
+      <img src="immagini/urano.png" alt="Slide 8">
+      <img src="immagini/Nettuno.png" alt="Slide 9">
+
+    </div>
+
+    <!-- Manual Navigation -->
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+      <label for="radio5" class="manual-btn"></label>
+      <label for="radio6" class="manual-btn"></label>
+      <label for="radio7" class="manual-btn"></label>
+      <label for="radio8" class="manual-btn"></label>
+      <label for="radio9" class="manual-btn"></label>
+    </div>
+  </div>
+
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Los Pianetos</title>
@@ -41,4 +169,4 @@
 
     </div>
 </body>
-</html>
+</html> -->

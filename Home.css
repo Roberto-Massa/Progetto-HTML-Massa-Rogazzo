@@ -4,7 +4,6 @@ body{
 }
 
 
-
 .Semititolo{
     
     display: flex;
@@ -12,13 +11,14 @@ body{
     align-items: center;
     position: absolute;
     
+    top: 250px;
+    left: 10vw;
     color: violet;
-    width: 200px;
+    width: 150px;
     height: 50px;
     border: 3px solid #7311f2;
     animation: animazioneSemititolo 2s ease-in  infinite;
 }
-
 
 @keyframes animazioneSemititolo{
     0%{
@@ -45,10 +45,6 @@ body{
         
     }
 }
-
-
-
-
 
 
 
@@ -81,17 +77,9 @@ body{
     opacity: 0.3;
 }
 
-
-
-
-
 .elementoIntro:hover{
     animation: animazioneElementoIntro 0.7s ease-in-out forwards;
 }
-
-
-
-
 
 @keyframes animazioneElementoIntro{
     0%{
@@ -109,12 +97,12 @@ body{
 }
 
 
+
 .postitolo{
     position: relative;
     top: 10px;
     align-items: center;
 }
-
 
 .Titolo{
     font-family: "Poppins", "sans-serif";
@@ -141,27 +129,24 @@ body{
     }
 }
 
+
+
 .SupportButton{
     position: fixed;
-    right: 20px;
+    right: 30px;
     background: transparent;
     border-color: whitesmoke;
     color: whitesmoke;
     border-radius: 25px;
-    padding: 2px;
+    padding: 4px;
     z-index: 5;
     opacity: 0.4;   
 }
 
-
 .SupportButton:hover{
     animation: SupportButtonanimation 1s ease-in-out forwards;
-
+    font: bold;
 }
-
-
-
-
 
 @keyframes SupportButtonanimation {
     0%{
@@ -182,13 +167,6 @@ body{
 
 
 
-.PosSaturn{
-    position: absolute;
-    left: 1000px;
-    
-}
-
-
 .divButton{
     position: absolute;
     margin-top: 20px;
@@ -199,26 +177,27 @@ body{
 }
 
 
+.StartButton_Footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.PosSole{
     position: absolute;
-    left: -200px;
-    height: 320px;
-    width: 100px;
-    border-radius: 50px;
+    bottom: 200px;
+    width: 99vw;
+    height: 50px;
+    background-color: transparent;
+    border: transparent;
 }
 
 
 .StartButtonDiv{
-    position: absolute;
-    left: 535px;
-    bottom: 10px;
     width: 150px;
     height: 30px;
-    background-color: transparent;
+    background-color: rgb(18, 37, 145);
     border: 5px solid white;
     border-radius: 25px;
-    opacity: 0.3;
+    opacity: 0.8;
 }
 
 
@@ -230,18 +209,19 @@ body{
     border-radius: 25px;
     border: 5px solid transparent;
     opacity: 0.8;
+    cursor: pointer;
 }
-
 
 
 .StartButton:hover{
     scale: 1.2;
     color: wheat;
-    font-family: "Yellowtail", cursive;
-    font-weight: 600;
+    font-family: "Yellowtail";
+    font-weight: 500;
     font-style: normal;
     opacity: 1;
 }
+
 .StartButtonDiv:hover{
     background:linear-gradient(to right,
     #f542b3, #7311f2, #0ae7f2,#0ae7f2,#7311f2, #f542b3);
@@ -260,6 +240,15 @@ body{
     }
 }
 
+footer {
+    background-color: #333;   
+    color: white;             
+    text-align: center;      
+    padding: 20px;            
+    font-size: 18px;
+}
 
-
-
+footer a {
+    color: #307adb;         
+    text-decoration: none;
+}

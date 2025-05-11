@@ -143,6 +143,7 @@ body{
 
 .SupportButton{
     position: fixed;
+    right: 20px;
     background: transparent;
     border-color: whitesmoke;
     color: whitesmoke;

@@ -32,6 +32,7 @@ body{
     animation-fill-mode: forwards;
     border-radius: 25px;
     color: white;
+    
 }
 
 
@@ -210,6 +211,46 @@ body{
 
 
 
+.divBottone{
+    position: absolute;
+    left: 95%;
+    top: 10%;
+    border:  3px solid transparent;
+}
+
+
+.bottone{
+    width: auto;
+    height: auto;
+    position: absolute;
+    border-radius: 25px;
+    color: limegreen;
+    border-color: transparent;
+    border: 2px solid lime;
+    background-color: transparent;
+    
+}
 
 
 
+.bottone:hover{
+    animation: HomeButtonanimation 1s ease-in-out forwards;
+    font: bold;
+}
+@keyframes HomeButtonanimation {
+    0%{
+        transform: scale(1);
+        background: conic-gradient(lime, cyan);
+        opacity: 0.2;
+        color: black;
+    }
+    100%{
+        scale: 1.1;
+        opacity: 1;
+        background: conic-gradient( lime, cyan);
+        color: black;
+        border-color: whitesmoke;
+        box-shadow: 0px 0px 50px cyan;
+        font-size: 1.2;
+    }
+}

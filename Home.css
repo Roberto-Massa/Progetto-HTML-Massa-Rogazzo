@@ -10,14 +10,13 @@ body{
     justify-content: center;
     align-items: center;
     position: absolute;
-    
-    top: 250px;
+    top: 25%;
     left: 10vw;
     color: violet;
     width: 150px;
     height: 50px;
     border: 3px solid #7311f2;
-    animation: animazioneSemititolo 2s ease-in  infinite;
+    animation: animazioneSemititolo 2s linear infinite;
 }
 
 @keyframes animazioneSemititolo{

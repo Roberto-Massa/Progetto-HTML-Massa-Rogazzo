@@ -1,7 +1,7 @@
 body{
     background-color: transparent;
-    background-image: url(immagini/SfondoNero.jpg);
-    width: auto;
+    background-image: url(immagini/SfondoNero.png);
+    width: 97vw;
     
 }
 
@@ -171,8 +171,6 @@ body{
 
 
 
-
-
 .DivContenitoreImmagine::after, .DivContenitoreImmagine::before{
     content: "";
     position: absolute;
@@ -187,7 +185,6 @@ body{
     
    
 }
-
 
 
 .DivContenitoreImmagine:hover::after{

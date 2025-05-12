@@ -181,8 +181,8 @@ body{
     justify-content: center;
     align-items: center;
 
-    position: absolute;
-    bottom: 2vw;
+    position: relative;
+    bottom: -24vw;
     width: 99vw;
     height: 50px;
     background-color: transparent;
@@ -240,6 +240,8 @@ body{
 }
 
 footer {
+    position: relative;
+    top: -530px;
     background-color: #333;   
     color: white;             
     text-align: center;      
@@ -250,4 +252,12 @@ footer {
 footer a {
     color: #307adb;         
     text-decoration: none;
+}
+
+
+.Sistema_Solare {
+    position: relative;
+    bottom: -25vw;
+    display: flex;
+    justify-content: center;
 }

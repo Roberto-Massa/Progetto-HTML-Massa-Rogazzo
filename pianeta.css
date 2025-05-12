@@ -15,13 +15,14 @@ body{
 
 .paragrafo{
     position: absolute;
-    padding-left: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     top: 35%;
-    left: 100px;
+    left: 20vw;
     text-wrap: wrap;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.2;
-    width: 300px;
+    width: 400px;
     height: 350px;
     font-size: large;
     border: 1px dashed white;

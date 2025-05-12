@@ -46,6 +46,49 @@
         }
     }
 
+    .divBottone{
+      position: absolute;
+      left: 95%;
+      top: 10%;
+      border:  3px solid transparent;
+    }
+
+
+    .bottone{
+      width: auto;
+      height: auto;
+      position: absolute;
+      border-radius: 25px;
+      color: rgb(119, 0, 255);
+      border-color: transparent;
+      border: 2px solid rgb(119, 0, 255);
+      background-color: transparent;
+        
+    }
+
+    .bottone:hover{
+        animation: HomeButtonanimation 1s ease-in-out forwards;
+        font: bold;
+    }
+    
+    @keyframes HomeButtonanimation {
+        0%{
+            transform: scale(1);
+            background: rgb(119, 0, 255);
+            opacity: 0.2;
+            color: black;
+        }
+        100%{
+            scale: 1.1;
+            opacity: 1;
+            background: rgb(119, 0, 255);
+            color: black;
+            border-color: whitesmoke;
+            box-shadow: 0px 0px 50px rgb(0, 162, 255);
+            font-size: 1.2;
+        }
+    }
+
     .carousel {
       max-width: 1200px;
       justify-content: space-evenly;
@@ -113,6 +156,10 @@
 
   <div class ="Titolo">
     <h1>Scopri i pianeti del Sistema Solare!</h1>
+  </div>
+
+  <div class="divBottone">
+    <a href="Home.html"><button class="bottone">Home</button></a>
   </div>
 
 
